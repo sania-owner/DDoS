@@ -1,16 +1,2 @@
 # DDoS
-<h2>Для чего это ?</h2>
-<p>Настройте автоматическую атаку на сайты орков с максимальной производительностью и автоматическим обновлением IP адресов для атаки
-<h2>Системные требования:</h2>
-<p>Ubuntu 18 и выше
-<p>Пользователь root
-<h2>Как запустить:</h2>
-<br>1. Откройте консоль от имени root
-<br>2. Запустите скрипт установки @wget https://raw.githubusercontent.com/sania-owner/DDoS/main/install.sh; chmod ugo+x install.sh; sh ./install.sh@
-<br>3. Выберите какую атаку на орков вы хотите устроить:
-&nbsp;&nbsp;<b>Первый способ</b>
-&nbsp;&nbsp;@cd /root; ./start_layer4.sh@ 
-&nbsp;&nbsp;SYN-флуд. Такую атаку более просто распознать, удобно использовать не для сайтов 
-<p>&nbsp;&nbsp;<b>Второй способ</b>
-&nbsp;&nbsp;@cd /root; ./start_layer4.sh@ 
-&nbsp;&nbsp;HTTP GET DoS. Такую атаку сложно распознать, удобно использовать для атаки на сайты 
+Инструкция для установки https://github.com/sania-owner/DDoS/wiki/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F
