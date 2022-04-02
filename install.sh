@@ -20,7 +20,7 @@ apt-get update
 git clone https://github.com/MHProDev/MHDDoS.git /root/MHProDev
 apt install python3-pip
 cd /root/MHProDev
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 python3 -m pip install tabulate
 git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git /root/mhddos_proxy
 cd /root/mhddos_proxy; python3 runner.py -t 1000 -c /root/list.txt --debug
