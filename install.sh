@@ -4,7 +4,7 @@ sudo apt-get update
 mkdir "$HOME"/DDoS
 git clone https://github.com/MHProDev/MHDDoS.git "$HOME"/DDoS/MHProDev
 git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git "$HOME"/DDoS/mhddos_proxy
-sudo apt install python3-pip -y
+sudo apt-get install python3-pip -y
 cd "$HOME"/DDoS/MHProDev; pip3 install -r requirements.txt
 python3 -m pip install tabulate
 
