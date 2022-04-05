@@ -1,5 +1,6 @@
 #!/bin/bash
-rm -rf "$HOME"/DDoS 
+sudo pkill -9 -f "python3"
+rm -rf "$HOME"/DDoS
 sudo apt-get update
 mkdir "$HOME"/DDoS
 git clone https://github.com/MHProDev/MHDDoS.git "$HOME"/DDoS/MHProDev
