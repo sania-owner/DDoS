@@ -1,36 +1,12 @@
 #!/bin/bash
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-SYS_DT=$(date +%F-%T | tr ':' '_')
 
-exiterr()  { echo "Error: $1" >&2; exit 1; }
-exiterr2() { exiterr "'apt-get install' failed."; }
-conf_bk() { /bin/cp -f "$1" "$1.old-$SYS_DT" 2>/dev/null; }
-bigecho() { echo "## $1"; }
-
-
-check_root() {
-  if [ "$(id -u)" != 0 ]; then
-    exiterr "Script must be run as root. Try 'sudo bash $0'"
-  fi
-}
-
-
-# Install
-apt-get update 
-git clone https://github.com/MHProDev/MHDDoS.git /root/MHProDev
-apt install python3-pip
-cd /root/MHProDev
-pip3 install -r requirements.txt
+sudo apt-get update
+mkdir "$HOME"/DDoS
+git clone https://github.com/MHProDev/MHDDoS.git "$HOME"/DDoS/MHProDev
+git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git "$HOME"/DDoS/mhddos_proxy
+sudo apt install python3-pip -y
+cd "$HOME"/DDoS/MHProDev; pip3 install -r requirements.txt
 python3 -m pip install tabulate
-git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git /root/mhddos_proxy
-wget -O /root/layer4.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/layer4.sh
-wget -O /root/layer7.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/layer7.sh
-wget -O /root/start.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/start.sh
-chmod 0777 /root/layer4.sh
-chmod 0777 /root/layer7.sh
-chmod 0777 /root/start.sh
 
-
-
-
-
+wget -O "$HOME"/DDoS/auto.sh https://raw.githubusercontent.com/sania-owner/DDoS1/main/auto.sh; chmod ugo+x "$HOME"/DDoS/auto.sh
+wget -O "$HOME"/DDoS/start.sh https://raw.githubusercontent.com/sania-owner/DDoS1/main/start.sh; chmod ugo+x "$HOME"/DDoS/start.sh
