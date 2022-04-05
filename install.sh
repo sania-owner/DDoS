@@ -8,5 +8,5 @@ sudo apt install python3-pip -y
 cd "$HOME"/DDoS/MHProDev; pip3 install -r requirements.txt
 python3 -m pip install tabulate
 
-wget -O "$HOME"/DDoS/auto.sh https://raw.githubusercontent.com/sania-owner/DDoS1/main/auto.sh; chmod ugo+x "$HOME"/DDoS/auto.sh
-wget -O "$HOME"/DDoS/start.sh https://raw.githubusercontent.com/sania-owner/DDoS1/main/start.sh; chmod ugo+x "$HOME"/DDoS/start.sh
+wget -O "$HOME"/DDoS/auto.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/auto.sh; chmod ugo+x "$HOME"/DDoS/auto.sh
+wget -O "$HOME"/DDoS/start.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/start.sh; chmod ugo+x "$HOME"/DDoS/start.sh
