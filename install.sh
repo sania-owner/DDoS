@@ -9,4 +9,5 @@ python3 -m pip install tabulate
 
 wget -O "$HOME"/DDoS/auto.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/auto.sh; sudo chmod ugo+x "$HOME"/DDoS/auto.sh
 wget -O "$HOME"/DDoS/start.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/start.sh; sudo chmod ugo+x "$HOME"/DDoS/start.sh
+wget -O "$HOME"/DDoS/cron.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/cron.sh; sudo chmod ugo+x "$HOME"/DDoS/cron.sh
 mv "$HOME"/install.sh "$HOME"/DDoS/install.sh
