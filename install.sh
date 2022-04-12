@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt-get update
+apt-get install git -y
 mkdir "$HOME"/DDoS
 git clone https://github.com/MHProDev/MHDDoS.git "$HOME"/DDoS/MHProDev
 git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git "$HOME"/DDoS/mhddos_proxy
