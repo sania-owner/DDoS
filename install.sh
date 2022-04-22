@@ -7,6 +7,7 @@ git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git "$HOME"/D
 sudo apt-get install python3-pip -y
 cd "$HOME"/DDoS/MHProDev; pip3 install -r requirements.txt
 python3 -m pip install tabulate
+python3 -m pip install colorama
 
 wget -O "$HOME"/DDoS/auto.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/auto.sh; sudo chmod ugo+x "$HOME"/DDoS/auto.sh
 wget -O "$HOME"/DDoS/start.sh https://raw.githubusercontent.com/sania-owner/DDoS/main/start.sh; sudo chmod ugo+x "$HOME"/DDoS/start.sh
